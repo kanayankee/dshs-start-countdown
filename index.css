@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&family=Yusei+Magic&display=swap');
+
+@font-face {
+  font-family: "skywalker";
+  src: url(../skywalker-demo.otf) format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+body {
+  font-family: YuGothic, 'Yu Gothic', sans-serif;
+  background-image: url(/school.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  margin-top: 48px;
+  font-size: 50pt;
+  font-family: 'Yusei Magic';
+}
+
+#countdown {
+  font-size: 54pt;
+}
+
+.box {
+  margin-bottom: 130px;
+  width: 100%;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+}
+
+@media screen and (max-width:768px) {
+  h1 {
+    font-size: 20pt;
+  }
+
+  img {
+    width: 54px;
+  }
+
+  p {
+    margin-top: 32px;
+    font-size: 26pt;
+  }
+
+  #countdown {
+    font-size: 32pt;
+  }
+
+  .box {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  h1 {
+    font-size: 16pt;
+  }
+
+  img {
+    width: 64px;
+  }
+
+  p {
+    margin-top: 24px;
+    font-size: 16pt;
+  }
+
+  #countdown {
+    font-size: 22pt;
+  }
+
+  .box {
+    margin-bottom: 70px;
+  }
+}
