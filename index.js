@@ -16,8 +16,8 @@ window.onload = () => {
       diff -= 1000 * sec;
       countdown.innerText = `${zeroPad(day)}日 ${zeroPad(hour)}時間 ${zeroPad(min)}分 ${zeroPad(sec)}秒`;
     } else {
-      message.innerText = "作品提出期間は終了しました！"
-      countdown.innerText = "お疲れさまでした！"
+      message.innerText = "2学期スタート！"
+      countdown.innerText = ""
     }
     setTimeout(timer, 100)
   }
