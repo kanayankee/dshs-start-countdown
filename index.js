@@ -1,7 +1,7 @@
 window.onload = () => {
   const message = document.querySelector("#message")
   const countdown = document.querySelector("#countdown")
-  const deadline = dayjs('2024-12-02 09:40:00')
+  const deadline = dayjs('2025-03-03 09:40:00')
 
   const timer = () => {
     let diff = deadline.diff();
@@ -16,7 +16,7 @@ window.onload = () => {
       diff -= 1000 * sec;
       countdown.innerText = `${zeroPad(day)}日 ${zeroPad(hour)}時間 ${zeroPad(min)}分 ${zeroPad(sec)}秒`;
     } else {
-      message.innerText = "次は学年末テスト！"
+      message.innerText = "次は学力テスト！"
       countdown.innerText = ""
     }
     setTimeout(timer, 100)
